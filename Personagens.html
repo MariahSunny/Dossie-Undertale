@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dossiê Undertale</title>
+  <link rel="icon" href="favicon-32x32.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      background-color: #000;
+      background-image: url('the-ruins-undertale-pixel-thumb.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 30px;
+      background-color: rgba(0,0,0,0.8);
+      border-bottom: 2px solid #1a1a1a;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      font-family: 'Press Start 2P', monospace;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-img {
+      width: 30px;
+      height: 30px;
+    }
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+    .menu a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-family: 'Press Start 2P', monospace;
+    }
+    .menu a:hover {
+      text-decoration: underline;
+    }
+    .conteudo {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #a155a8;
+      text-align: center;
+      font-family: 'Press Start 2P', monospace;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+
+    /* Wrapper para agrupar múltiplos placeholders */
+    .placeholders-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .placeholder {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 750px;
+      padding: 40px;
+      gap: 40px;
+      border: 2px solid #a155a8;
+      border-radius: 8px;
+      box-sizing: border-box;
+      background: rgba(0,0,0,0.8);
+    }
+    .placeholder img {
+      width: 200px;
+      height: auto;
+      image-rendering: pixelated;
+      flex-shrink: 0;
+    }
+    .placeholder .texto {
+      text-align: left;
+      line-height: 1.4;
+      font-size: 16px;
+      color: white;
+    }
+    .placeholder .texto h1 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #a155a8;
+    }
+    .placeholders-wrapper .placeholder:nth-child(4n+3),
+    .placeholders-wrapper .placeholder:nth-child(4n+4) {
+  flex-direction: row;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <span>Dossiê Undertale</span>
+      <img src="favicon-32x32.png" alt="Logo" class="logo-img" />
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="Rotas.html">Rotas</a></li>
+        <li><a href="Personagens.html">Personagens</a></li>
+        <li><a href="Comunidade.html">Comunidade</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <div class="conteudo">
+    <h1>Personagens</h1>
+
+    <div class="placeholders-wrapper">
+      <!-- Sans -->
+      <div class="placeholder">
+        <img src="Sans_overworld.webp" alt="Sans">
+        <div class="texto">
+          <h1>Sans</h1>
+          <p>Esqueleto preguiçoso e piadista, irmão mais velho de Papyrus. No entanto, guarda segredos profundos: sabe sobre os resets da linha do tempo e atua como juiz na Rota Genocida, sendo o chefe final dessa rota</p>
+        </div>
+      </div>
+      <!-- Toriel -->
+      <div class="placeholder">
+        <img src="Toriel_overworld.webp" alt="Toriel">
+        <div class="texto">
+          <h1>Toriel</h1>
+          <p>Monstra maternal que protege o protagonista nas Ruínas. Guia e ensina a sobreviver aos puzzles, evitando que o jogador avance até se provar digno. Se não for poupada, torna-se um chefe opcional no início</p>
+        </div>
+      </div>
+      <!-- Papyrus -->
+      <div class="placeholder">
+        <img src="Papyrus_overworld.webp" alt="Papyrus">
+        <div class="texto">
+          <h1>Papyrus</h1>
+          <p>Irmão de Sans, otimista e sonhador, aspirante à Guarda Real. Inicialmente tenta capturar o protagonista, mas acaba se tornando amigo, mostrando um coração gentil</p>
+        </div>
+      </div>
+      <!-- Undyne -->
+      <div class="placeholder">
+        <img src="Undyne_overworld_armor_without_helmet.webp" alt="Undyne">
+        <div class="texto">
+          <h1>Undyne</h1>
+          <p>Capitã corajosa da Guarda Real, dedicada à justiça e proteção dos monstros. Atua como chefe em combate, especialmente impactante na Rota Pacifista</p>
+        </div>
+      </div>
+      <!-- Alphys -->
+      <div class="placeholder">
+        <img src="Alphys_overworld.webp" alt="Alphys">
+        <div class="texto">
+          <h1>Alphys</h1>
+          <p>Cientista tímida e fã de animes que desenvolve tecnologia para-a Guarda Real. Tem papel central na história, principalmente em Hotland, e conecta-se com Undyne emocional e profissionalmente</p>
+        </div>
+      </div>
+      <!-- Asgore -->
+      <div class="placeholder">
+        <img src="499-4999959_asgore-sprite-undertale-asgore-pixel-art-clipart.png" alt="Asgore">
+        <div class="texto">
+          <h1>Asgore</h1>
+          <p>Rei gentil, mas atormentado, que lidera os monstros com tristeza após a guerra com humanos. Seu dilema moral leva a uma luta emocional contra o protagonista</p>
+        </div>
+      </div>
+      <!-- Asriel -->
+      <div class="placeholder">
+        <img src="Asriel_Dreemurr_overworld.webp" alt="Asriel">
+        <div class="texto">
+          <h1>Asriel</h1>
+          <p>Filho de Asgore e Toriel, personagem com passado trágico. Sua transformação final é central na Rota Pacifista, com grande peso emocional</p>
+        </div>
+      </div>
+      <!-- Flowey -->
+      <div class="placeholder">
+        <img src="Flowey_overworld.webp" alt="Flowey">
+        <div class="texto">
+          <h1>Flowey</h1>
+          <p>Flor sinistra sem moralidade que manipula o jogador e introduz conceitos como LV e EXP. Revela-se antagonista nas principais rotas, chave para as mecânicas de “SAVE” e “RESET”</p>
+        </div>
+      </div>
+      <!-- Mettaton -->
+      <div class="placeholder">
+        <img src="Mettaton_EX_overworld.webp" alt="Mettaton">
+        <div class="texto">
+          <h1>Mettaton</h1>
+          <p>Robô estrela da TV criado por Alphys, excêntrico e teatral. Atua como chefe em combate e oferece momentos de show biz, principalmente em Mettaton EX</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

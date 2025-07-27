@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dossiê Undertale</title>
+  <link rel="icon" href="favicon-32x32.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      min-height: 100%;
+      background-color: #000;
+      background-image: url(the-ruins-undertale-pixel-thumb.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: 'Arial Black', sans-serif;
+      color: white;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 30px;
+      background-color: #000;
+      border-bottom: 2px solid #1a1a1a;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      font-family: 'Press Start 2P', monospace;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    .conteudo {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #a155a8;
+      text-align: center;
+      font-family: 'Press Start 2P', monospace;
+      min-height: 100vh; /* ocupa toda a altura da tela */
+      box-sizing: border-box;
+    }
+
+    .secao {
+      margin-bottom: 30px;
+      font-size: 20px;
+      color: white;
+    }
+    
+    .botao-postar {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      font-family: 'Press Start 2P', monospace;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .botao-postar:hover {
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <span>Dossiê Undertale</span>
+      <img src="favicon-32x32.png" alt="Logo" class="logo-img" />
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="Rotas.html">Rotas</a></li>
+        <li><a href="Personagens.html">Personagens</a></li>
+        <li><a href="Comunidade.html">Comunidade</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main class="conteudo">
+  <h1>Comunidade Undertale</h1>
+
+  <section class="form-section">
+    <h2 style="color: #fff; font-size: 16px;">Envie seu post</h2>
+    <form onsubmit="return false;">
+      <input type="text" placeholder="Título do post" style="width: 100%; padding: 10px; margin-bottom: 10px; background-color: #000; border: 1px solid #555; color: white; font-family: 'Press Start 2P', monospace;">
+      <textarea rows="4" placeholder="Escreva seu post aqui..." style="width: 100%; padding: 10px; margin-bottom: 10px; background-color: #000; border: 1px solid #555; color: white; font-family: 'Press Start 2P', monospace;"></textarea>
+      <button type="submit" class="botao-postar">Postar</button>
+    </form>
+  </section>
+
+  <section class="posts" style="margin-top: 40px;">
+    <h2 style="color: #fff; font-size: 16px;">Posts da Comunidade</h2>
+
+    <div class="post" style="background-color: rgba(0,0,0,0.8); border: 2px solid #a155a8; padding: 20px; margin: 20px 0; border-radius: 8px; text-align: left;">
+      <h3 style="color: #a155a8; font-size: 12px;">Meu Top 3 Bosses de Undertale</h3>
+      <textarea rows="3" style="width: 100%; background-color: #000; color: #ddd; font-family: 'Press Start 2P', monospace; font-size: 10px; border: none; resize: none;">1. Sans (óbvio)
+2. Asriel Dreemurr
+3. Undyne the Undying</textarea>
+    </div>
+
+    <div class="post" style="background-color: rgba(0,0,0,0.8); border: 2px solid #a155a8; padding: 20px; margin: 20px 0; border-radius: 8px; text-align: left;">
+      <h3 style="color: #a155a8; font-size: 12px;">Trilha Sonora Favorita</h3>
+      <textarea rows="2" style="width: 100%; background-color: #000; color: #ddd; font-family: 'Press Start 2P', monospace; font-size: 10px; border: none; resize: none;">“Megalovania”, sem dúvidas. Mas “Hopes and Dreams” também é maravilhosa!</textarea>
+    </div>
+
+    <div class="post" style="background-color: rgba(0,0,0,0.8); border: 2px solid #a155a8; padding: 20px; margin: 20px 0; border-radius: 8px; text-align: left;">
+      <h3 style="color: #a155a8; font-size: 12px;">Qual rota vocês preferem?</h3>
+      <textarea rows="3" style="width: 100%; background-color: #000; color: #ddd; font-family: 'Press Start 2P', monospace; font-size: 10px; border: none; resize: none;">Eu joguei a pacifista verdadeira primeiro. Muito emocionante. Depois tentei a genocida e me senti mal ;-;</textarea>
+    </div>
+  </section>
+</main>
+</body>
+</html>
